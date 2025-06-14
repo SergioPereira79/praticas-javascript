@@ -86,17 +86,75 @@ main h1{
 .appear {
     opacity: 0;
     transform: translateX(-100px);
-
-    /* A transição deve ser declarada aqui, no estado base! */
     transition: all 1s ease-in-out;
 }
 .visivel {
-    /* Esta classe apenas define o estado final. */
     opacity: 1;
     transform: translateX(0);
     font-weight: lighter;
 }
+/* --- ESTILOS DO GUIA RÁPIDO LATERAL --- */
+#guia-rapido-js {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 500px; 
+    height: 100vh; 
+    background-color: #6af56f; 
+    color: #222; 
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 9999; 
 
+    
+    transform: translateX(480px); 
+    transition: transform 0.3s ease-in-out;
+}
+#guia-rapido-js:hover {
+    transform: translateX(0); 
+}
+#guia-rapido-handle {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#guia-rapido-conteudo {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 50px;
+    height: 100%;
+    overflow-y: auto; 
+}
+#guia-rapido-conteudo h2 {
+    text-align: center;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+#guia-rapido-conteudo h3 {
+    color: #555;
+    margin-top: 25px;
+}
+.guia-item {
+    margin-bottom: 15px;
+    border-left: 3px solid #555;
+    padding-left: 10px;
+}
+.guia-item code {
+    background-color: #4CAF50;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+}
+.guia-item p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
 footer{
     background-color: #4CAF50;
     color: #333;
