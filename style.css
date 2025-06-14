@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    margin: 20px 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 20px 200px;
+}
+main h1{
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+.section{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.section h2{
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+.section-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.form-div{
+    width: 100%;
+}
+.section img{
+    width: 250px;
+    max-width: 30%;
+    height: 250px;
+}
+.section p{
+    width: 600px;
+    max-width: 70%;
+}
+.appear {
+    opacity: 0;
+    transform: translateX(-100px);
+
+    /* A transição deve ser declarada aqui, no estado base! */
+    transition: all 1s ease-in-out;
+}
+.visivel {
+    /* Esta classe apenas define o estado final. */
+    opacity: 1;
+    transform: translateX(0);
+    font-weight: lighter;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
