@@ -58,6 +58,107 @@
                 </form>
             </div>
         </section>
+        <!-- <section id="colinha" class="dicionario-js">
+            <h3>Básico no JS</h3>
+            <span>Guia de Referência Essencial de JavaScript para Web
+<p>
+    --- Como pegar e Manipular Elementos do HTML (A Ponte com o DOM)
+    Esta é a base de tudo. Como o JavaScript "conversa" com o HTML ---
+</p>
+<br>
+<p><b>1. document.getElementById('meu-id')</b></p>
+<br>
+<p>
+    O que faz: Busca o único elemento que tem o id especificado. É o mais rápido e específico.
+    Exemplo: const titulo = document.getElementById('titulo-site');
+</p>
+<br>
+<p><b>2. document.querySelector('seletor-css')</b></p>
+<br>
+O que faz: Busca o primeiro elemento que corresponde ao seletor CSS informado. Super versátil.
+Exemplo: const primeiroBotao = document.querySelector('.btn-principal');
+
+3. document.querySelectorAll('seletor-css')
+
+O que faz: Busca TODOS os elementos que correspondem ao seletor CSS e retorna uma lista (NodeList).
+Exemplo: const todosOsCards = document.querySelectorAll('.card-produto');
+
+4. elemento.textContent = 'Novo texto'
+
+O que faz: Altera o conteúdo de texto de um elemento de forma segura.
+Exemplo: titulo.textContent = 'Bem-vindo ao Meu Site!';
+
+5. elemento.innerHTML = '<h1>Novo</h1>'
+
+O que faz: Altera todo o conteúdo HTML dentro de um elemento. (Use com cuidado, pois pode ser inseguro se o conteúdo vier do usuário).
+Exemplo: chatMessages.innerHTML = ''; (Usado para limpar o chat, por exemplo).
+
+6.document.createElement('tag')
+
+O que faz: Cria um novo elemento HTML em memória, pronto para ser usado.
+Exemplo: const novaDiv = document.createElement('div');
+
+7.elementoPai.appendChild(elementoFilho)
+
+O que faz: Pega um elemento criado (elementoFilho) e o insere no final de outro elemento (elementoPai).
+Exemplo: chatMessages.appendChild(novaDiv);</span>
+
+--- Como Reagir a Ações do Usuário (Eventos) Como tornar a página interativa ---
+
+
+1. elemento.addEventListener('evento', minhaFuncao)
+
+O que faz: A ferramenta principal. "Ouve" por um evento em um elemento e executa uma função quando ele acontece.
+Eventos Mais Comuns que Você Deve Conhecer:
+'click': Quando o usuário clica com o mouse.
+'scroll': Quando o usuário rola a página.
+'submit': Quando um formulário é enviado.
+'mouseenter' / 'mouseleave': Quando o cursor do mouse entra ou sai da área de um elemento.
+'keydown' / 'keyup': Quando uma tecla é pressionada ou solta.
+
+2.event.preventDefault()
+
+O que faz: Usado dentro da função de um evento (principalmente 'submit') para prevenir o comportamento padrão do navegador (como recarregar a página).
+--- Como mudar a Aparência (Classes e Estilos) Como o JavaScript controla o CSS ---
+
+
+1. elemento.classList.add('nome-da-classe')
+
+O que faz: Adiciona uma classe CSS a um elemento. A forma preferida de aplicar estilos.
+
+2. elemento.classList.remove('nome-da-classe')
+
+O que faz: Remove uma classe CSS de um elemento.
+
+3. elemento.classList.toggle('nome-da-classe')
+
+O que faz: Se a classe não existe, adiciona. Se já existe, remove. Perfeito para menus e botões de "liga/desliga".
+
+4. elemento.style.propriedade = 'valor'
+
+O que faz: Altera um estilo CSS diretamente. É útil para mudanças rápidas ou calculadas, mas para estados (visível/escondido, ativo/inativo) classList é melhor.
+Exemplo: titulo.style.color = 'red'; (Note que background-color vira backgroundColor em JS).
+---Como fazer animações com JavaScript
+A prática moderna é usar o JS para controlar a animação, e o CSS para executá-la ---
+
+1. elemento.classList.add('animacao-ativa')
+
+Como usar: Esta é a técnica principal. Você cria uma classe no CSS (ex: .animacao-ativa) que define o estado final da sua animação, e usa o JS para adicionar essa classe quando quiser que a animação comece.
+IntersectionObserver
+
+Quando usar: A melhor forma de disparar uma animação quando um elemento entra na tela ao rolar a página.
+requestAnimationFrame(minhaFuncaoDeAnimacao)
+
+Quando usar: Para animações contínuas que dependem do scroll (como Parallax) ou que precisam ser extremamente suaves e sincronizadas com a taxa de atualização da tela.
+--- Como lidar com Listas de Dados (Arrays)
+Essencial para quando você tem múltiplos itens (posts de blog, produtos, mensagens) ---
+
+.forEach(item => { ... }): Executa uma ação para cada item da lista. Não retorna nada.
+.map(item => { ... }): Transforma cada item da lista em algo novo e retorna uma nova lista com os itens transformados.
+.filter(item => { ... }): Testa cada item com uma condição e retorna uma nova lista apenas com os itens que passaram no teste.
+.find(item => { ... }): Retorna o primeiro item da lista que passa em um teste.
+.includes(valor): Verifica se um valor simples existe na lista (retorna true ou false).</p>
+        </section> -->
     </main>   
     <footer>
             <p>&copy; 2023 Meu Site de Testes</p>
